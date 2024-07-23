@@ -31,7 +31,7 @@ def load_variant_prevalence_data(country):
 
 # function for loading vaccination data
 def load_vaccination_data(country):
-    vaccination_data_path = __base_path / Path("data/vaccination-data/vaccination_data.csv")
+    vaccination_data_path = __base_path / Path("data/vaccination-data/vaccination-data.csv")
     vaccination_data = pd.read_csv(vaccination_data_path, index_col=0)
     vaccination_data = vaccination_data[vaccination_data["location"] == country]
     vaccination_data.index = pd.to_datetime(vaccination_data.index)
