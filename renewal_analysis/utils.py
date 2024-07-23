@@ -16,7 +16,7 @@ def load_target_data(country):
 
 # Function for loading google mobility data
 def load_mobility_data(country):
-    mobility_data_path = __base_path / Path("data/mobility-data/mobility-data.csv"))
+    mobility_data_path = __base_path / Path("data/mobility-data/mobility-data.csv")
     mobility_data = pd.read_csv(mobility_data_path, index_col=0)
     mobility_data = mobility_data[mobility_data["country_region"] == country]
     mobility_data.index = pd.to_datetime(mobility_data.index)
