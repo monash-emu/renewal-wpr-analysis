@@ -32,8 +32,8 @@ def plot_main(model_data, case_data, mobility_data, vax_data):
     vax_est = vax_data['people_fully_vaccinated_per_hundred']
                                  
     # Create subplot
-    fig = make_subplots(3,2, shared_xaxes=True,  subplot_titles=('Reported cases', 'Rt', 'Susceptible population', 
-                                                                 'Transmission potential', 'Population mobility', 'Primary series vaccination coverage'),
+    fig = make_subplots(3,2, shared_xaxes=True,  subplot_titles=('a. Reported cases', 'b. Rt', 'c. Susceptible population', 
+                                                                 'd. Transmission potential', 'e. Population mobility', 'f. Primary series vaccination coverage'),
                        horizontal_spacing = 0.05, vertical_spacing = 0.05)
     
     # Add modelled case notifications median line
